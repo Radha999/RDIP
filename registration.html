@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title> Home</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;    
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+
+label {
+    
+    width: 200px;
+    
+    margin-left: 10px;
+    text-align: center;
+    margin-right:15px;
+    float:left;
+}
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="https://iiit.ac.in"> <img src="https://iiit.ac.in/img/iiit-new.png" style="width:80px;height:40px"></a>
+        <a href="https://serc.iiit.ac.in/rdip" style="float: right; color:purple; font-size: 20px;padding-top: 5px;"> RDIP</a>
+    </div>
+    <div style="padding:5px 0 0 0">
+        <ul>
+            <li> <a href="./homepage.html"> Home </a></li>
+            <li><a href="#">Registration Form</a></li>
+        </ul>
+    </div>
+<br><br>
+ <form action="./details.html" method="get" >   
+	 
+	 <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required>
+	
+         <br> <br> <br>
+        <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+	<br> <br> <br>
+         <label for="phone-no">Phone Number:</label>
+          <input type="tel" id="phone-num" name="phone-num" required>
+          <br> <br> <br>
+<label> Gender: </label>
+	<input type="radio" id="male" name="gender" value="male">
+  Male
+  <input type="radio" id="female" name="gender" value="female">
+ Female
+  <input type="radio" id="other" name="gender" value="other">
+  Other
+
+	<br><br><br>
+	<label for="Reason for RDIP">Reason for RDIP:</label>
+	<input type = "radio" name = "reason" value = "HTML"> HTML
+         <input type = "radio" name = "reason" value = "CSS"> CSS
+	 <input type = "radio" name = "reason" value = "JavaScript"> JavaScript
+	<br><br><br>
+         <label for="college">College:</label>
+          <input type="text" id="college" name="college" required> <br><br><br>
+	<label>
+	<input type = "checkbox" name = "declaration" value = "yes"></label> I declare above details given by me are true. <br><br><br>
+<label>
+<input type="submit" value="Submit"></a></label>
+<label>
+ <input type="reset" value="Reset" style="align:right"></label>
+
+
