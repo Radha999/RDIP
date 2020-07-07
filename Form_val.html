@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title> Home</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;    
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+
+label {
+    
+    width: 200px;
+    
+    margin-left: 10px;
+    text-align: center;
+    margin-right:15px;
+    float:left;
+}
+
+    </style>
+</head>
+<br><br>
+<body>
+    <script src="./project.js"> </script>
+<label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+	
+         <br> <br> <br>
+        <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+	<br> <br> <br>
+         <label for="phone-no">Phone Number:</label>
+          <input type="tel" id="phone-num" name="phone-num" required>
+          <br> <br> <br>
+         <button onclick="form_validation()">Submit</button>
+</body>
