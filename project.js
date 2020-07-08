@@ -234,6 +234,7 @@ function clickbutton ()
 function clearval()
 {
     document.getElementById("display").value = "";
+    return "";
 }
 
 function sq_rt()
@@ -243,6 +244,7 @@ function sq_rt()
     var p = Math.sqrt(k);
     p = (Math.round((p*1000 + 0.0001)))/1000;
     document.getElementById("display").value = p;
+    return p;
 }
 
 function abs_val()
@@ -250,6 +252,7 @@ function abs_val()
     var k;
     k = document.getElementById("display").value;
     document.getElementById("display").value = Math.abs(k);
+    return Math.abs(k);
 }
 
 function clickequalto() 
@@ -257,6 +260,7 @@ function clickequalto()
     if(a==null)
     {
         alert("Insufficient arguments")
+	return "Insufficient arguments";
     }
     else
     {
