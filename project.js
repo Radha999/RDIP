@@ -201,3 +201,127 @@ function form_validation()
     return true;
     }
 }
+
+
+function displayval(num) 
+{ 
+    document.getElementById("display").value += num;
+    return;
+} 
+
+var a=null,op=null,b=null;
+
+function clickbutton ()
+{
+    var p = document.getElementById("display").value;
+    if(op!=null)
+    {
+        var k = p;
+        k.pop;
+        document.getElementById("display").value = k;
+        var newop = p[p.length-1];
+        clickequalto();
+        displayval(newop);
+        p = document.getElementById("display").value;
+    }
+    console.log(p);
+    a = p.split(p[p.length-1]);
+    a=parseFloat(a);
+    op = p[p.length-1];
+    return ;
+}
+
+function clearval()
+{
+    document.getElementById("display").value = "";
+}
+
+function sq_rt()
+{
+    var k;
+    k = document.getElementById("display").value;
+    var p = Math.sqrt(k);
+    p = (Math.round((p*1000 + 0.0001)))/1000;
+    document.getElementById("display").value = p;
+}
+
+function abs_val()
+{
+    var k;
+    k = document.getElementById("display").value;
+    document.getElementById("display").value = Math.abs(k);
+}
+
+function clickequalto() 
+{
+    if(a==null)
+    {
+        alert("Insufficient arguments")
+    }
+    else
+    {
+        console.log(a);
+        console.log(b);
+        var p = document.getElementById("display").value;
+        var k = p.split(op);
+        b = k[1];
+        b=parseFloat(b);
+        if(op==="+")
+        {
+            add_func(a,b);
+        }
+        else if(op==="-")
+        {
+            subtract_func(a,b);
+        }
+        else if(op==="*")
+        {
+            product_func(a,b);
+        }
+        else if(op==="/")
+        {
+            division_func(a,b);
+        }
+        else if(op==="%")
+        {
+            percentage_func(a,b);
+        }
+    }
+    op = null;
+    a = null;
+}
+
+function add_func(x,y)
+{
+  var result=x+y;
+  document.getElementById("display").value=result;
+  return result;
+}
+
+function subtract_func(x,y)
+{
+    var result=x-y;
+    document.getElementById("display").value=result;
+    return result;
+}
+
+function product_func(x,y)
+{
+    var result=x*y;
+    document.getElementById("display").value=result;
+    return result;
+}
+
+function division_func(x,y)
+{
+    var result=x/y;
+    document.getElementById("display").value=result;
+    return result;
+}
+
+function percentage_func(x,y)
+{
+    var result=(x*y)/100;
+    document.getElementById("display").value=result;
+    return result;
+}

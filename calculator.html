@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Calculator</title>
+</head>
+<body>
+    <script src="./project.js" ></script>
+<h1> CALCULATOR </H1> <br>
+    <div class="calci-body">  
+          
+            <input id="display"  type="text" value=""> <br>
+           
+              
+                
+           
+            <button onclick="displayval('1')" id="btn1">1</button>
+            <button onclick="displayval('2')" id="btn2">2</button>
+            <button onclick="displayval('3')" id="btn3">3</button>
+            <button onclick="displayval('4')" id="btn4">4</button><br>
+            <button onclick="displayval('5')" id="btn5">5</button>
+            <button onclick="displayval('6')" id="btn6">6</button>
+            <button onclick="displayval('7')" id="btn7">7</button>
+            <button onclick="displayval('8')" id="btn8">8</button><br>
+            <button onclick="displayval('9')" id="btn9">9</button>
+            <button onclick="displayval('0')" id="btn0">0</button>
+         
+
+         	<button onclick="displayval('+');clickbutton();" id="plus_btn">+</button>
+                <button onclick="displayval('-');clickbutton();" id="minus_btn">-</button><br>
+                <button onclick="displayval('/');clickbutton();" id="div_btn">/</button>
+                <button onclick="displayval('*');clickbutton();" id="mul_btn">*</button>
+                <button onclick="displayval('%');clickbutton();" id="perc_btn">%</button>
+                <button onclick="clickequalto()" id="equals_btn">=</button><br>
+                <button id="sqrt_btn" onclick="sq_rt()">sqrt</button>
+                <button id="Abs_btn" onclick="abs_val()">Abs</button>
+		  <button id="clear" onclick="clearval()">C</button>
+          
+        <button id="decimal" onclick="displayval('.')">.</button>
+        
+        </div>
+
+</body>
